@@ -1,0 +1,88 @@
+# The west manifest file (west.yml) for MCUXpresso SDK delivery.
+#
+# See the west documentation for more information:
+#
+# https://docs.zephyrproject.org/latest/guides/west/index.html
+manifest:
+    remotes:
+    - name: nxp
+      url-base: https://github.com/NXP
+    - name: nxp-zephyr
+      url-base: https://github.com/nxp-zephyr
+    - name: nxp-mcuxpresso
+      url-base: https://github.com/nxp-mcuxpresso
+    defaults:
+      remote: nxp-mcuxpresso
+    group-filter:
+    - -optional
+    - -bifrost
+    - -ble_cs_algo_private
+    - -bluetooth_private
+    projects:
+      - name: bifrost
+        path: bifrost
+        remote: nxp-zephyr
+        revision: main
+        west-commands: scripts/west_commands.yml
+        groups: 
+        - bifrost
+      - name: mcuxsdk-manifests
+        repo-path: mcuxsdk-manifests
+        path: manifests
+        revision: v25.06.00
+        import:
+            name-allowlist:
+                - core
+                - freertos-kernel
+                - mcux-freertos-drivers
+                - mcux-devices-wireless
+                - CMSIS
+                - mcux-sdk-middleware-sdmmc
+                - fatfs
+                - ethermind
+                - mcux-sdk-middleware-connectivity-framework
+                - mbedtls
+                - lwip
+                - littlefs
+                - ble_controller
+                - bluetooth
+                - edgefast_bt_ble
+                - ieee-802.15.4
+                - mcux-sdk-middleware-multicore
+                - usb
+                - rpmsg-lite
+                - secure-subsystem
+                - wifi_nxp
+                - wpa_supplicant-rtos
+                - fw_bin
+                - mcu-sdk-components
+                - mcu-sdk-examples
+                - els_pkc
+                - mcux-devices-rt
+                - mcux-devices-mcx
+                - mcux-mcmgr
+                - erpc
+                - usb
+                - mcuboot_opensource
+      - name: mcu-sdk-examples-matter
+        repo-path: mcuxsdk-examples-matter
+        path: mcuxsdk/examples/matter_examples
+        revision: main
+      - name: matter
+        remote: nxp
+        repo-path: matter
+        revision: d563760a5ca9fb04a613fb4a63c77066bfb60264
+        path: mcuxsdk/middleware/matter
+        submodules:
+        - name: nlio
+          path: third_party/nlio/repo
+        - name: nlassert
+          path: third_party/nlassert/repo
+        - name: pigweed
+          path: third_party/pigweed/repo
+        - name: jsoncpp
+          path: third_party/jsoncpp/repo
+        - name: nxp_matter_support
+          path: third_party/nxp/nxp_matter_support
+        - name: ot-nxp
+          path: third_party/openthread/ot-nxp
