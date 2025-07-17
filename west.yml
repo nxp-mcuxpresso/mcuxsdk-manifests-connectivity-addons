@@ -26,6 +26,11 @@ manifest:
       west-commands: scripts/west_commands.yml
       groups:
       - bifrost
+    - name: core
+      path: mcuxsdk/
+      repo-path: mcuxsdk-core
+      revision: 25_06_00_matter_support
+      west-commands: scripts/west_commands.yml
     - name: mcuxsdk-manifests
       repo-path: mcuxsdk-manifests
       path: manifests

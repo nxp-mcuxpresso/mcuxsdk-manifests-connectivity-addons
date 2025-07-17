@@ -26,13 +26,17 @@ manifest:
         west-commands: scripts/west_commands.yml
         groups: 
         - bifrost
+      - name: core
+        path: mcuxsdk/
+        repo-path: mcuxsdk-core
+        revision: 25_06_00_matter_support
+        west-commands: scripts/west_commands.yml
       - name: mcuxsdk-manifests
         repo-path: mcuxsdk-manifests
         path: manifests
         revision: v25.06.00
         import:
             name-allowlist:
-                - core
                 - freertos-kernel
                 - mcux-freertos-drivers
                 - mcux-devices-wireless
