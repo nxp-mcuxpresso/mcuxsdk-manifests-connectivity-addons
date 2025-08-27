@@ -36,10 +36,6 @@ manifest:
       path: manifests
       revision: v25.06.00
       import: true
-    - name: mcu-sdk-examples-matter
-      repo-path: mcuxsdk-examples-matter
-      path: mcuxsdk/examples/matter_examples
-      revision: main
     - name: matter
       remote: nxp
       repo-path: matter
@@ -58,3 +54,7 @@ manifest:
         path: third_party/nxp/nxp_matter_support
       - name: ot-nxp
         path: third_party/openthread/ot-nxp
+    - name: mcu-sdk-examples-matter
+      repo-path: mcuxsdk-examples-matter
+      path: mcuxsdk/examples/matter_examples
+      revision: main
