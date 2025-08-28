@@ -68,6 +68,7 @@ manifest:
                 - erpc
                 - usb
                 - mcuboot_opensource
+                - mcuxsdk-tool-data
       - name: matter
         remote: nxp
         repo-path: matter
