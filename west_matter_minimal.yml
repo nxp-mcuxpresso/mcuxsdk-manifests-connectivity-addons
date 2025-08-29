@@ -42,6 +42,8 @@ manifest:
                 - ethermind
                 - mcux-sdk-middleware-connectivity-framework
                 - mbedtls
+                - mbedtls3x
+                - psa_crypto_driver
                 - lwip
                 - littlefs
                 - ble_controller
