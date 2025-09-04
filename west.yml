@@ -52,4 +52,4 @@ manifest:
     - name: mcu-sdk-examples-matter
       repo-path: mcuxsdk-examples-matter
       path: mcuxsdk/examples/matter_examples
-      revision: main
+      revision: 48c4f2f0e4bbd97eae5b73b74c48a7161a1929a1
