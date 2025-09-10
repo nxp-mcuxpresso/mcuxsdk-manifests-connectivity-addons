@@ -49,6 +49,8 @@ manifest:
         path: third_party/nxp/nxp_matter_support
       - name: ot-nxp
         path: third_party/openthread/ot-nxp
+      - name: simw-top-mini
+        path: third_party/simw-top-mini/repo
     - name: mcu-sdk-examples-matter
       repo-path: mcuxsdk-examples-matter
       path: mcuxsdk/examples/matter_examples
