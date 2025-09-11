@@ -4,28 +4,28 @@
 #
 # https://docs.zephyrproject.org/latest/guides/west/index.html
 manifest:
-    remotes:
+  remotes:
     - name: nxp
       url-base: https://github.com/NXP
     - name: nxp-zephyr
       url-base: https://github.com/nxp-zephyr
     - name: nxp-mcuxpresso
       url-base: https://github.com/nxp-mcuxpresso
-    defaults:
-      remote: nxp-mcuxpresso
-    group-filter:
+  defaults:
+    remote: nxp-mcuxpresso
+  group-filter:
     - -optional
     - -bifrost
     - -ble_cs_algo_private
     - -bluetooth_private
-    projects:
+  projects:
     - name: bifrost
       path: bifrost
       remote: nxp-zephyr
       revision: main
       west-commands: scripts/west_commands.yml
       groups:
-      - bifrost
+        - bifrost
     - name: mcuxsdk-manifests
       repo-path: mcuxsdk-manifests
       path: manifests
@@ -34,24 +34,24 @@ manifest:
     - name: matter
       remote: nxp
       repo-path: matter
-      revision: 695f94b2afc5f86ab61f85d8a22b554840c0c1e8
+      revision: 41fc89cdf2a852b030e2caf68c720df637fa3321
       path: mcuxsdk/middleware/matter
       submodules:
-      - name: nlio
-        path: third_party/nlio/repo
-      - name: nlassert
-        path: third_party/nlassert/repo
-      - name: pigweed
-        path: third_party/pigweed/repo
-      - name: jsoncpp
-        path: third_party/jsoncpp/repo
-      - name: nxp_matter_support
-        path: third_party/nxp/nxp_matter_support
-      - name: ot-nxp
-        path: third_party/openthread/ot-nxp
-      - name: simw-top-mini
-        path: third_party/simw-top-mini/repo
+        - name: nlio
+          path: third_party/nlio/repo
+        - name: nlassert
+          path: third_party/nlassert/repo
+        - name: pigweed
+          path: third_party/pigweed/repo
+        - name: jsoncpp
+          path: third_party/jsoncpp/repo
+        - name: nxp_matter_support
+          path: third_party/nxp/nxp_matter_support
+        - name: ot-nxp
+          path: third_party/openthread/ot-nxp
+        - name: simw-top-mini
+          path: third_party/simw-top-mini/repo
     - name: mcu-sdk-examples-matter
       repo-path: mcuxsdk-examples-matter
       path: mcuxsdk/examples/matter_examples
-      revision: afbe0d5533847b683d389c84225c9384a699d141
+      revision: d4b270721817afd8fdb67e9d1870840c15167a01
