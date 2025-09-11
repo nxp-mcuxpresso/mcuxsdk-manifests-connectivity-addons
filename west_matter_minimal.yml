@@ -29,7 +29,7 @@ manifest:
       - name: mcuxsdk-manifests
         repo-path: mcuxsdk-manifests
         path: manifests
-        revision: v25.09.00_RC1
+        revision: v25.09.00_RC2
         import:
             name-allowlist:
                 - core
