@@ -4,75 +4,76 @@
 #
 # https://docs.zephyrproject.org/latest/guides/west/index.html
 manifest:
-    remotes:
+  remotes:
     - name: nxp
       url-base: https://github.com/NXP
     - name: nxp-zephyr
       url-base: https://github.com/nxp-zephyr
     - name: nxp-mcuxpresso
       url-base: https://github.com/nxp-mcuxpresso
-    defaults:
-      remote: nxp-mcuxpresso
-    group-filter:
+  defaults:
+    remote: nxp-mcuxpresso
+  group-filter:
     - -optional
     - -bifrost
     - -ble_cs_algo_private
     - -bluetooth_private
-    projects:
-      - name: bifrost
-        path: bifrost
-        remote: nxp-zephyr
-        revision: main
-        west-commands: scripts/west_commands.yml
-        groups: 
+  projects:
+    - name: bifrost
+      path: bifrost
+      remote: nxp-zephyr
+      revision: main
+      west-commands: scripts/west_commands.yml
+      groups:
         - bifrost
-      - name: mcuxsdk-manifests
-        repo-path: mcuxsdk-manifests
-        path: manifests
-        revision: v25.09.00_RC2
-        import:
-            name-allowlist:
-                - core
-                - freertos-kernel
-                - mcux-freertos-drivers
-                - mcux-devices-wireless
-                - CMSIS
-                - mcux-sdk-middleware-sdmmc
-                - fatfs
-                - ethermind
-                - mcux-sdk-middleware-connectivity-framework
-                - mbedtls
-                - mbedtls3x
-                - psa_crypto_driver
-                - lwip
-                - littlefs
-                - ble_controller
-                - bluetooth
-                - edgefast_bt_ble
-                - ieee-802.15.4
-                - mcux-sdk-middleware-multicore
-                - usb
-                - rpmsg-lite
-                - secure-subsystem
-                - wifi_nxp
-                - wpa_supplicant-rtos
-                - fw_bin
-                - mcu-sdk-components
-                - mcu-sdk-examples
-                - els_pkc
-                - mcux-devices-rt
-                - mcux-devices-mcx
-                - mcux-mcmgr
-                - erpc
-                - usb
-                - mcuboot_opensource
-                - mcuxsdk-tool-data
-      - name: matter
-        remote: nxp
-        repo-path: matter
-        revision: 695f94b2afc5f86ab61f85d8a22b554840c0c1e8
-        path: mcuxsdk/middleware/matter
-        submodules:
+    - name: mcuxsdk-manifests
+      repo-path: mcuxsdk-manifests
+      path: manifests
+      revision: v25.09.00_RC2
+      import:
+        name-allowlist:
+          - core
+          - freertos-kernel
+          - mcux-freertos-drivers
+          - mcux-devices-wireless
+          - CMSIS
+          - mcux-sdk-middleware-sdmmc
+          - fatfs
+          - ethermind
+          - mcux-sdk-middleware-connectivity-framework
+          - mbedtls
+          - mbedtls3x
+          - psa_crypto_driver
+          - lwip
+          - littlefs
+          - ble_controller
+          - bluetooth
+          - edgefast_bt_ble
+          - ieee-802.15.4
+          - XCVR
+          - mcux-sdk-middleware-multicore
+          - usb
+          - rpmsg-lite
+          - secure-subsystem
+          - wifi_nxp
+          - wpa_supplicant-rtos
+          - fw_bin
+          - mcu-sdk-components
+          - mcu-sdk-examples
+          - els_pkc
+          - mcux-devices-rt
+          - mcux-devices-mcx
+          - mcux-mcmgr
+          - erpc
+          - usb
+          - mcuboot_opensource
+          - mcuxsdk-tool-data
+    - name: matter
+      remote: nxp
+      repo-path: matter
+      revision: 695f94b2afc5f86ab61f85d8a22b554840c0c1e8
+      path: mcuxsdk/middleware/matter
+      submodules:
         - name: nlio
           path: third_party/nlio/repo
         - name: nlassert
@@ -87,7 +88,7 @@ manifest:
           path: third_party/openthread/ot-nxp
         - name: simw-top-mini
           path: third_party/simw-top-mini/repo
-      - name: mcu-sdk-examples-matter
-        repo-path: mcuxsdk-examples-matter
-        path: mcuxsdk/examples/matter_examples
-        revision: afbe0d5533847b683d389c84225c9384a699d141
+    - name: mcu-sdk-examples-matter
+      repo-path: mcuxsdk-examples-matter
+      path: mcuxsdk/examples/matter_examples
+      revision: afbe0d5533847b683d389c84225c9384a699d141
