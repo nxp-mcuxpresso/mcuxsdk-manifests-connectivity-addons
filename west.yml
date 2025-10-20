@@ -26,15 +26,24 @@ manifest:
       west-commands: scripts/west_commands.yml
       groups:
         - bifrost
+    - name: core
+      path: mcuxsdk/
+      repo-path: mcuxsdk-core
+      revision: 8a9a7449af41406c3af92578629355678dfb7e9e
+      west-commands: scripts/west_commands.yml
+    - name: framework
+      path: mcuxsdk/middleware/wireless/framework/
+      repo-path: mcux-sdk-middleware-connectivity-framework
+      revision: f46bce121c30167ff6c23d7778e04f90713512c1
     - name: mcuxsdk-manifests
       repo-path: mcuxsdk-manifests
       path: manifests
-      revision: v25.09.00_RC2
+      revision: v25.09.00
       import: true
     - name: matter
       remote: nxp
       repo-path: matter
-      revision: bb623c4e37a899913e59dafb920cb875f862d013
+      revision: 9e2ec3825b24338a0938491e20a9569a8474e1fd
       path: mcuxsdk/middleware/matter
       submodules:
         - name: nlio
@@ -54,4 +63,4 @@ manifest:
     - name: mcu-sdk-examples-matter
       repo-path: mcuxsdk-examples-matter
       path: mcuxsdk/examples/matter_examples
-      revision: d4b270721817afd8fdb67e9d1870840c15167a01
+      revision: b4efc8428b7f852c8c0013d4eed1e1050dee9459
