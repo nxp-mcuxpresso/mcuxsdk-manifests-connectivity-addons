@@ -4,37 +4,41 @@
 #
 # https://docs.zephyrproject.org/latest/guides/west/index.html
 manifest:
-    remotes:
+  remotes:
     - name: nxp
       url-base: https://github.com/NXP
     - name: nxp-zephyr
       url-base: https://github.com/nxp-zephyr
     - name: nxp-mcuxpresso
       url-base: https://github.com/nxp-mcuxpresso
-    defaults:
-      remote: nxp-mcuxpresso
-    group-filter:
+  defaults:
+    remote: nxp-mcuxpresso
+  group-filter:
     - -optional
     - -bifrost
     - -ble_cs_algo_private
     - -bluetooth_private
-    projects:
+  projects:
     - name: bifrost
       path: bifrost
       remote: nxp-zephyr
       revision: main
       west-commands: scripts/west_commands.yml
       groups:
-      - bifrost
+        - bifrost
     - name: core
       path: mcuxsdk/
       repo-path: mcuxsdk-core
       revision: 8a9a7449af41406c3af92578629355678dfb7e9e
       west-commands: scripts/west_commands.yml
+    - name: framework
+      path: mcuxsdk/middleware/wireless/framework/
+      repo-path: mcux-sdk-middleware-connectivity-framework
+      revision: f46bce121c30167ff6c23d7778e04f90713512c1
     - name: mcuxsdk-manifests
       repo-path: mcuxsdk-manifests
       path: manifests
-      revision: v25.09.00_RC2
+      revision: v25.09.00
       import: true
     - name: matter
       remote: nxp
@@ -42,20 +46,20 @@ manifest:
       revision: 3ba8b71adb40b0cb00aecb90edf350e5dbcb9bd0
       path: mcuxsdk/middleware/matter
       submodules:
-      - name: nlio
-        path: third_party/nlio/repo
-      - name: nlassert
-        path: third_party/nlassert/repo
-      - name: pigweed
-        path: third_party/pigweed/repo
-      - name: jsoncpp
-        path: third_party/jsoncpp/repo
-      - name: nxp_matter_support
-        path: third_party/nxp/nxp_matter_support
-      - name: ot-nxp
-        path: third_party/openthread/ot-nxp
-      - name: simw-top-mini
-        path: third_party/simw-top-mini/repo
+        - name: nlio
+          path: third_party/nlio/repo
+        - name: nlassert
+          path: third_party/nlassert/repo
+        - name: pigweed
+          path: third_party/pigweed/repo
+        - name: jsoncpp
+          path: third_party/jsoncpp/repo
+        - name: nxp_matter_support
+          path: third_party/nxp/nxp_matter_support
+        - name: ot-nxp
+          path: third_party/openthread/ot-nxp
+        - name: simw-top-mini
+          path: third_party/simw-top-mini/repo
     - name: mcu-sdk-examples-matter
       repo-path: mcuxsdk-examples-matter
       path: mcuxsdk/examples/matter_examples
