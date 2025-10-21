@@ -31,7 +31,7 @@ manifest:
       repo-path: mcuxsdk-core
       revision: 8a9a7449af41406c3af92578629355678dfb7e9e
       west-commands: scripts/west_commands.yml
-    - name: framework
+    - name: mcux-sdk-middleware-connectivity-framework
       path: mcuxsdk/middleware/wireless/framework/
       repo-path: mcux-sdk-middleware-connectivity-framework
       revision: f46bce121c30167ff6c23d7778e04f90713512c1
