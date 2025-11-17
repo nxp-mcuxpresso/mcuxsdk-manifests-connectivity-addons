@@ -35,6 +35,10 @@ manifest:
       path: mcuxsdk/middleware/wireless/framework/
       repo-path: mcux-sdk-middleware-connectivity-framework
       revision: f46bce121c30167ff6c23d7778e04f90713512c1
+    - name: mcu-sdk-examples
+      path: mcuxsdk/examples/
+      repo-path: mcuxsdk-examples
+      revision: c08e72afeec1e6babd510969ec0923db8a76b38a
     - name: mcuxsdk-manifests
       repo-path: mcuxsdk-manifests
       path: manifests
@@ -66,7 +70,6 @@ manifest:
           - wpa_supplicant-rtos
           - fw_bin
           - mcu-sdk-components
-          - mcu-sdk-examples
           - els_pkc
           - mcux-devices-rt
           - mcux-devices-mcx
