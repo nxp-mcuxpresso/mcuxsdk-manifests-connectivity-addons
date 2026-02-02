@@ -81,7 +81,7 @@ manifest:
     - name: matter
       remote: nxp
       repo-path: matter
-      revision: 13713b9a03ddbf5a1349ed2ac0cea2f82c87a7bf
+      revision: 9d9a00656d7e88d90280747cfce81a27b327e04c
       path: mcuxsdk/middleware/matter
       submodules:
         - name: nlio
@@ -101,4 +101,4 @@ manifest:
     - name: mcu-sdk-examples-matter
       repo-path: mcuxsdk-examples-matter
       path: mcuxsdk/examples/matter_examples
-      revision: 6a6b0d0b7c0ddd17873eed85f68cd4e2411fc38e
+      revision: 1230d3422a070fb2ee6ab00055b48b6085390dc6
