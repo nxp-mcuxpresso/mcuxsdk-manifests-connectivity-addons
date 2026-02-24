@@ -98,6 +98,8 @@ manifest:
           path: third_party/openthread/ot-nxp
         - name: simw-top-mini
           path: third_party/simw-top-mini/repo
+        - name: uriparser
+          path: third_party/uriparser/repo
     - name: mcu-sdk-examples-matter
       repo-path: mcuxsdk-examples-matter
       path: mcuxsdk/examples/matter_examples
