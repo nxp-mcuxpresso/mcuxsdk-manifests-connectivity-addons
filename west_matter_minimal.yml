@@ -26,28 +26,19 @@ manifest:
       west-commands: scripts/west_commands.yml
       groups:
         - bifrost
-    - name: core
-      path: mcuxsdk/
-      repo-path: mcuxsdk-core
-      revision: 8a9a7449af41406c3af92578629355678dfb7e9e
-      west-commands: scripts/west_commands.yml
-    - name: mcux-sdk-middleware-connectivity-framework
-      path: mcuxsdk/middleware/wireless/framework/
-      repo-path: mcux-sdk-middleware-connectivity-framework
-      revision: f46bce121c30167ff6c23d7778e04f90713512c1
-    - name: mcu-sdk-examples
-      path: mcuxsdk/examples/
-      repo-path: mcuxsdk-examples
-      revision: c08e72afeec1e6babd510969ec0923db8a76b38a
     - name: mcuxsdk-manifests
       repo-path: mcuxsdk-manifests
       path: manifests
-      revision: v25.09.00
+      revision: v26.03.00_RC1
       import:
         name-allowlist:
           - freertos-kernel
+          - core
+          - mcux-sdk-middleware-connectivity-framework
+          - mcu-sdk-examples
           - mcux-freertos-drivers
           - mcux-devices-wireless
+          - secure_storage
           - CMSIS
           - mcux-sdk-middleware-sdmmc
           - fatfs
@@ -81,7 +72,7 @@ manifest:
     - name: matter
       remote: nxp
       repo-path: matter
-      revision: 56b9956f586c198304dfc3f620d95de10f8655a8
+      revision: 602c8b4a3913e5c5c7ea4bb566571094580426b0
       path: mcuxsdk/middleware/matter
       submodules:
         - name: nlio
@@ -103,4 +94,4 @@ manifest:
     - name: mcu-sdk-examples-matter
       repo-path: mcuxsdk-examples-matter
       path: mcuxsdk/examples/matter_examples
-      revision: d8d1f6febffb5fb5b5936692d3198bc01879c887
+      revision: e1061703ed692d4bc56ee879eceedb9d4e101704
