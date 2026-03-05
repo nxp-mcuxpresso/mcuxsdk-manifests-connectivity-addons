@@ -26,6 +26,10 @@ manifest:
       west-commands: scripts/west_commands.yml
       groups:
         - bifrost
+    - name: fw_bin
+      url: https://github.com/NXP/wifi_nb_fw
+      path: mcuxsdk/components/conn_fwloader/fw_bin
+      revision: 395d74a0820094c3b9e53cab8f67948bb5a897a0
     - name: mcuxsdk-manifests
       repo-path: mcuxsdk-manifests
       path: manifests
