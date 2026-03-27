@@ -42,7 +42,7 @@ manifest:
     - name: psa_crypto_driver
       url: https://github.com/NXP/psa_crypto_driver
       path: mcuxsdk/components/psa_crypto_driver
-      revision: 2a4535605dad9b94f9cad1f4d27224d931659a4c
+      revision: 1cf8fd38d1894d4e28053770687641a2e08a0c29
     - name: mcuxsdk-manifests
       repo-path: mcuxsdk-manifests
       path: manifests
