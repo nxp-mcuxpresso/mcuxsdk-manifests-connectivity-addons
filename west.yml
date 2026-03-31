@@ -38,7 +38,7 @@ manifest:
     - name: secure_storage
       repo-path: secure_storage
       path: mcuxsdk/middleware/secure_storage
-      revision: 8f8c57782fac62cbd6a8695429fb91a5593ee9da
+      revision: 58a86d061b60fee59495172a760cb7039473d5b0
     - name: psa_crypto_driver
       url: https://github.com/NXP/psa_crypto_driver
       path: mcuxsdk/components/psa_crypto_driver
