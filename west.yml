@@ -42,7 +42,7 @@ manifest:
     - name: psa_crypto_driver
       url: https://github.com/NXP/psa_crypto_driver
       path: mcuxsdk/components/psa_crypto_driver
-      revision: 2fabb99903513278b706e27df1491d7e01520ba4
+      revision: 783de0018f94721ddf12cefbe42c58d65a439490
     - name: mbedtls3x
       url: https://github.com/NXP/nxp_mbedtls
       path: mcuxsdk/middleware/mbedtls3x
