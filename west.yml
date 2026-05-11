@@ -47,6 +47,10 @@ manifest:
       url: https://github.com/NXP/nxp_mbedtls
       path: mcuxsdk/middleware/mbedtls3x
       revision: 495d04b4093a8914380d7301c95dcddcc9eb86d2
+    - name: fw_bin
+      url: https://github.com/NXP/wifi_nb_fw
+      path: mcuxsdk/components/conn_fwloader/fw_bin
+      revision: ffb1aa7ab4592ad50e0291177c1456ebe2d0bb5d
     - name: mcuxsdk-manifests
       repo-path: mcuxsdk-manifests
       path: manifests
