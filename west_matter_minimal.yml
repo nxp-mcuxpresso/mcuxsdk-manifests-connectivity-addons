@@ -51,6 +51,10 @@ manifest:
       url: https://github.com/NXP/wifi_nb_fw
       revision: ffb1aa7ab4592ad50e0291177c1456ebe2d0bb5d
       path: mcuxsdk/components/conn_fwloader/fw_bin
+    - name: mcu-sdk-examples
+      repo-path: mcuxsdk-examples
+      path: mcuxsdk/examples
+      revision: e0ed3ff4e81a77fc7ce15c1514ca1500df2644f3
     - name: mcuxsdk-manifests
       repo-path: mcuxsdk-manifests
       path: manifests
@@ -60,7 +64,6 @@ manifest:
           - freertos-kernel
           - core
           - mcux-sdk-middleware-connectivity-framework
-          - mcu-sdk-examples
           - mcux-freertos-drivers
           - mcux-devices-wireless
           - CMSIS
