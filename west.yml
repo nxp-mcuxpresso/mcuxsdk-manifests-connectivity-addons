@@ -54,7 +54,19 @@ manifest:
     - name: mcu-sdk-examples
       repo-path: mcuxsdk-examples
       path: mcuxsdk/examples
-      revision: e0ed3ff4e81a77fc7ce15c1514ca1500df2644f3
+      revision: 481c7f1cb15caab55a8c11b6ff895e23fe16d801
+    - name: wifi_nxp
+      url: https://github.com/NXP/wifi_nxp
+      path: mcuxsdk/middleware/wifi_nxp
+      revision: f79df9d70ce5ad049bbc7c7d0bf92297867f4e8d
+    - name: ble_controller
+      repo-path: mcuxsdk-middleware-bluetooth-controller
+      path: mcuxsdk/middleware/wireless/ble_controller
+      revision: 818dfe3ebb5830db7cb999afe306234f7f407154
+    - name: ieee-802.15.4
+      repo-path: mcux-sdk-middleware-ieee_802.15.4
+      path: mcuxsdk/middleware/wireless/ieee-802.15.4
+      revision: 511d1c09302f586da973deaefd43144d30aba762
     - name: mcuxsdk-manifests
       repo-path: mcuxsdk-manifests
       path: manifests
