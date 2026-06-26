@@ -67,6 +67,10 @@ manifest:
       repo-path: mcux-sdk-middleware-ieee_802.15.4
       path: mcuxsdk/middleware/wireless/ieee-802.15.4
       revision: 511d1c09302f586da973deaefd43144d30aba762
+    - name: lwip
+      url: https://github.com/nxp-mcuxpresso/lwip
+      path: mcuxsdk/middleware/lwip
+      revision: ddc007e9302d00c7ad026c2384724c2e0d82637d
     - name: mcuxsdk-manifests
       repo-path: mcuxsdk-manifests
       path: manifests
@@ -84,7 +88,6 @@ manifest:
           - ethermind
           - mbedtls
           - mbedtls3x
-          - lwip
           - littlefs
           - bluetooth
           - edgefast_bt_ble
