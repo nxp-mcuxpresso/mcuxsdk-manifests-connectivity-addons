@@ -66,7 +66,7 @@ manifest:
     - name: ieee-802.15.4
       repo-path: mcux-sdk-middleware-ieee_802.15.4
       path: mcuxsdk/middleware/wireless/ieee-802.15.4
-      revision: 511d1c09302f586da973deaefd43144d30aba762
+      revision: 74611cf806f8c312ab9e0ea995744a30cdeeede0
     - name: lwip
       url: https://github.com/nxp-mcuxpresso/lwip
       path: mcuxsdk/middleware/lwip
