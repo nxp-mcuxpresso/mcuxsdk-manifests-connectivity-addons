@@ -29,52 +29,28 @@ manifest:
     - name: core
       path: mcuxsdk/
       repo-path: mcuxsdk-core
-      revision: 7fdccae7e25f470d1fdfe00db83a4d3c863bf976
+      revision: 7599a858252dafa23467fd81eb172fb2395b35d1
       west-commands: scripts/west_commands.yml
-    - name: mcu-sdk-components
-      repo-path: mcux-component
-      path: mcuxsdk/components
-      revision: e67b49539b52f6df45d76db4f565da427b007f7b
-    - name: secure_storage
-      repo-path: secure_storage
-      path: mcuxsdk/middleware/secure_storage
-      revision: 58a86d061b60fee59495172a760cb7039473d5b0
     - name: psa_crypto_driver
       url: https://github.com/NXP/psa_crypto_driver
       path: mcuxsdk/components/psa_crypto_driver
-      revision: 783de0018f94721ddf12cefbe42c58d65a439490
-    - name: mbedtls3x
-      url: https://github.com/NXP/nxp_mbedtls
-      path: mcuxsdk/middleware/mbedtls3x
-      revision: 495d04b4093a8914380d7301c95dcddcc9eb86d2
-    - name: fw_bin
-      url: https://github.com/NXP/wifi_nb_fw
-      path: mcuxsdk/components/conn_fwloader/fw_bin
-      revision: ffb1aa7ab4592ad50e0291177c1456ebe2d0bb5d
+      revision: 826a7cba1a90aab596b9d7fce5718d9c9611dabb
     - name: mcu-sdk-examples
       repo-path: mcuxsdk-examples
       path: mcuxsdk/examples
-      revision: 481c7f1cb15caab55a8c11b6ff895e23fe16d801
+      revision: 1c5385819defc787e55b4e19a1c6ae0ac4900611
     - name: wifi_nxp
       url: https://github.com/NXP/wifi_nxp
       path: mcuxsdk/middleware/wifi_nxp
-      revision: f79df9d70ce5ad049bbc7c7d0bf92297867f4e8d
-    - name: ble_controller
-      repo-path: mcuxsdk-middleware-bluetooth-controller
-      path: mcuxsdk/middleware/wireless/ble_controller
-      revision: 818dfe3ebb5830db7cb999afe306234f7f407154
-    - name: ieee-802.15.4
-      repo-path: mcux-sdk-middleware-ieee_802.15.4
-      path: mcuxsdk/middleware/wireless/ieee-802.15.4
-      revision: 74611cf806f8c312ab9e0ea995744a30cdeeede0
+      revision: 0036f351323f2446a6e6ce9cf4079862cb934d95
     - name: lwip
       url: https://github.com/nxp-mcuxpresso/lwip
       path: mcuxsdk/middleware/lwip
-      revision: ddc007e9302d00c7ad026c2384724c2e0d82637d
+      revision: a5bc68f1b34f3b407a71e588bbca46091fd506a3
     - name: mcuxsdk-manifests
       repo-path: mcuxsdk-manifests
       path: manifests
-      revision: v26.03.00
+      revision: v26.06.00
       import: true
     - name: matter
       remote: nxp
