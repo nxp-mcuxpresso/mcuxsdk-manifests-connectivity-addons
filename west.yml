@@ -50,7 +50,7 @@ manifest:
     - name: mcuxsdk-manifests
       repo-path: mcuxsdk-manifests
       path: manifests
-      revision: v26.06.00
+      revision: v26.06.00-LTS
       import: true
     - name: matter
       remote: nxp
