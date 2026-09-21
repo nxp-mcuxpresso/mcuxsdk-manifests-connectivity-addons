@@ -29,7 +29,7 @@ manifest:
     - name: core
       path: mcuxsdk/
       repo-path: mcuxsdk-core
-      revision: 7599a858252dafa23467fd81eb172fb2395b35d1
+      revision: 957089f915ab63d805384023d8083847b68cd4d1
       west-commands: scripts/west_commands.yml
     - name: psa_crypto_driver
       url: https://github.com/NXP/psa_crypto_driver
